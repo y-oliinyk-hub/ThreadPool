@@ -31,8 +31,7 @@ public:
 
                     try {
                         task(); // Execute the task
-                    }
-                    catch (...) {
+                    } catch (...) {
                         std::cerr << "Worker thread caught unhandled exception\n";
                     }
                 }
